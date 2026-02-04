@@ -1,12 +1,12 @@
-import './App.css'
+import './App.css';
 import { Watchlist } from "./components/Watchlist/Watchlist";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Watchlist />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
