@@ -17,7 +17,6 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -26,17 +25,37 @@
     transform: rotate(360deg);
   }
 }
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
-
 .card {
   padding: 2em;
 }
-
 .read-the-docs {
   color: #888;
 }
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    color: black;
+}
+.todo-item {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+.todo-item input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #000;
+}
+.list {
+    margin-top: 20px;
+    text-align: left;
+} 
