@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AddMovie } from "../AddMovie/AddMovie"
+import { AddMovie } from "../OnAddMovie/OnAddMovie"
 import { MovieList } from "../MovieList/MovieList"
 
 export const Watchlist = () => {
