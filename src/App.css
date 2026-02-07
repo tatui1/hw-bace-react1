@@ -1,21 +1,21 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2px;
   text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 6px;
+  padding: 1.5px;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300px;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2px #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2 #61dafbaa);
 }
 @keyframes logo-spin {
   from {
@@ -31,31 +31,39 @@
   }
 }
 .card {
-  padding: 2em;
+  padding: 2px;
 }
 .read-the-docs {
   color: #888;
 }
-.container {
-    border: 2px solid black;
-    padding: 20px;
-    max-width: 400px;
-    margin: auto;
-    background: white;
-    color: black;
-}
+
 .todo-item {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px; 
+  margin: 10px auto;
+  padding: 8px;
+  border-bottom: 1px solid #444;
 }
-.todo-item input {
-    flex-grow: 1;
-    padding: 5px;
-    border: 1px solid #000;
+.movie-title {
+  flex-grow: 1;     
+  text-align: left; 
 }
-.list {
-    margin-top: 20px;
-    text-align: left;
-} 
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.controls > div {
+  display: flex;
+  gap: 5px;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  font-weight: bold;
+}
