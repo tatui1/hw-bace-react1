@@ -3,11 +3,22 @@ export const LikeDislike = ({ reaction, onLike, onDislike }) => {
     <div>
       <button
         onClick={onLike}
-        style={{ color: reaction === "like" ? "green" : "black" }}>Like</button>
+        style={{ 
+          color: reaction === "like" ? "green" : "black",
+          fontWeight: reaction === "like" ? "bold" : "normal"
+        }}
+      >
+        👍 Like
+      </button>
 
       <button
         onClick={onDislike}
-        style={{ color: reaction === "dislike" ? "red" : "black" }}>Dislike
+        style={{ 
+          color: reaction === "dislike" ? "red" : "black",
+          fontWeight: reaction === "dislike" ? "bold" : "normal"
+        }}
+      >
+        👎 Dislike
       </button>
     </div>
   )

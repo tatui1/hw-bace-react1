@@ -67,3 +67,13 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+button {
+  margin: 0 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container button {
+  margin-bottom: 15px;
+}
